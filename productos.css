@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(38, 57, 94);
+}
+  
+.header {
+    background-color:rgb(38, 57, 94); 
+    color: white; 
+    padding: 10px 20px; 
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    
+}
+  
+.contenedor-menu {
+    display: flex;
+    align-items: center; 
+}
+  
+.menu-icono {
+    width: 100px; 
+    height: auto;
+    margin-right: 10px;
+}
+  
+.Lista ul {
+    font-family: "Aboreto", system-ui;
+    font-weight: 1000;
+    font-style: normal;
+    font-optical-sizing: auto;
+    list-style-type: none; 
+    padding: 10px 0; 
+    margin: 0;
+    display: flex;
+    font-size: 24px; 
+}
+  
+.Lista ul li {
+    margin-right: 30px; 
+}
+  
+.Lista ul li a:hover{
+    color: black;
+}
+  
+.Lista ul li:last-child {
+    margin-right: 0; 
+}
+  
+.Lista ul li a {
+    color:white; 
+    text-decoration: none; 
+}
+  
+#titulo {
+    font-family: "Aboreto", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+      grid-template-columns: 1fr; 
+      padding: 10px; 
+    }
+  
+    .contenedor-menu {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .menu-icono {
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  
+    .Lista ul {
+      font-size: 22px;
+    }
+  
+    .Lista ul li {
+      margin-right: 0; 
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    #titulo1{
+      font-size: 50px;
+    }
+    .contenido-servicio h2{
+      font-size: 45px;
+    }
+    .servicio-grupo{
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+}
