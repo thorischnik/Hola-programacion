@@ -66,7 +66,6 @@ body{
   background-image: url(./imagenes/SKYYY.png); 
   background-size: cover; 
   background-position: center center;
-  padding: 20px; 
   height: 100vh; 
   display: flex; 
   justify-content: center; 
@@ -252,9 +251,11 @@ body{
   .tres-opciones{
     grid-template-columns: repeat(1,1fr);
     width: 100%;
+    justify-content: center;
+       
   }
   .tres-opciones h3 {
-      text-align: center;  
+      text-align: center;   
       margin-bottom: 0px;
   }
   .servicio-grupo{
@@ -286,10 +287,40 @@ body{
     padding: 20px;
   }
   #titulo1{
-    font-size: 50px;
+    font-size: 35px;
+    width: 100%;
   }
   .contenido-servicio h2{
     font-size: 45px;
   }
+
+  .parrafo-bienvenida {
+    width: 100%;
+  }
+  .titulo-1{
+    display: flex;
+    justify-content: center center;
+    max-width: 100%;
+  }
+
+  .actual, .retro, .streetwear {
+      font-size: 20px; /* Cambia el tamaño de la fuente */
+    }
+
+  .contenido-servicio h2{
+    font-size: 30px;
+  }
+  #titulo{
+    font-size: 50px;
+    text-align: center;
+  }
+  .contenido-servicio{
+    width: 100%;
+  }
 }
+  
+
+
+
+
 

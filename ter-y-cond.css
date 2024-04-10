@@ -111,5 +111,9 @@ body{
   .contenido-servicio h2{
     font-size: 45px;
   }
+  #titulo{
+    font-size: 50px;
+    text-align: center;
+  }
 }
   
