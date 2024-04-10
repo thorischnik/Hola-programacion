@@ -9,8 +9,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto; 
     align-items: center; 
-    justify-content: center; 
-    position: -webkit-sticky; 
+    justify-content: center;  
     position: sticky; 
     top: 0; 
     z-index: 1000; 
@@ -171,7 +170,7 @@ body{
       align-items: center; 
     }
     #titulo{
-      font-size: 50px;
+      font-size: 25px;
       text-align: center;
     }
 }

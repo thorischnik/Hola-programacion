@@ -2,15 +2,15 @@ body{
   background-color: rgb(38, 57, 94);
 }
 
-.header {
+.header{
   background-color:rgb(38, 57, 94); 
   color: white; 
   padding: 10px 20px; 
   display: grid;
   grid-template-columns: auto auto auto; 
-  align-items: center;
-  justify-content: center;
-  position: sticky;
+  align-items: center; 
+  justify-content: center;  
+  position: sticky; 
   top: 0; 
   z-index: 1000; 
   
@@ -24,7 +24,7 @@ body{
 .menu-icono {
   width: 100px; 
   height: auto;
-  margin-right: 10px;
+  margin-right: 10px; 
 }
 
 .Lista ul {
@@ -311,7 +311,7 @@ body{
     font-size: 30px;
   }
   #titulo{
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
   }
   .contenido-servicio{
