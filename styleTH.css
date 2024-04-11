@@ -264,7 +264,7 @@ body{
   }
   .header {
     grid-template-columns: 1fr; 
-    padding: 10px; 
+    padding: 10px;
   }
 
   .contenedor-menu {
@@ -316,6 +316,7 @@ body{
   }
   .contenido-servicio{
     width: 100%;
+    
   }
 }
   
