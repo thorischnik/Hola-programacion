@@ -1,66 +1,40 @@
 body{
-  background-color: rgb(38, 57, 94);
+  background-color: rgb(38, 57, 94)!important;
 }
 
-.header{
-  background-color:rgb(38, 57, 94); 
-  color: white; 
-  padding: 10px 20px; 
-  display: grid;
-  grid-template-columns: auto auto auto; 
-  align-items: center; 
-  justify-content: center;  
-  position: sticky; 
-  top: 0; 
-  z-index: 1000; 
-  
+#nav_prueba{
+  background-color: rgb(38, 57, 94)!important;
+  position: sticky!important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.contenedor-menu {
-  display: flex;
-  align-items: center; 
+.texto_nav{
+  color : white!important;
+  position: sticky!important;
+}
+
+#nav_prueba .navbar-nav .nav-link {
+  font-family: "Aboreto", system-ui;
+  color: white; /* Cambia el color del texto a blanco */
+  font-size: 1.5rem;
+
+}
+
+#nav_prueba .navbar-brand {
+  font-family: "Aboreto", system-ui;
+  color: white; /* Cambia el color del texto a blanco */
+  font-size: 1.5rem;
 }
 
 .menu-icono {
-  width: 100px; 
+  width: 80px; 
   height: auto;
   margin-right: 10px; 
 }
 
-.Lista ul {
-  font-family: "Aboreto", system-ui;
-  font-weight: 1000;
-  font-style: normal;
-  font-optical-sizing: auto;
-  list-style-type: none; 
-  padding: 10px 0; 
-  margin: 0;
-  display: flex;
-  font-size: 24px; 
-}
-
-.Lista ul li {
-  margin-right: 30px; 
-}
-
-.Lista ul li a:hover{
-  color: black;
-}
-
-.Lista ul li:last-child {
-  margin-right: 0; 
-}
-
-.Lista ul li a {
-  color:white; 
-  text-decoration: none; 
-}
-
-#titulo {
-  font-family: "Aboreto", system-ui;
-  font-weight: 600;
-  font-style: normal;
-}
+/* termino la nav */
 
 .parrafo-bienvenida {
   background-image: url(./imagenes/SKYYY.png); 
@@ -248,6 +222,14 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+  #nav_prueba .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  #nav_prueba .navbar-brand {
+    font-size: 1rem;
+  }
+
   .tres-opciones{
     grid-template-columns: repeat(1,1fr);
     width: 100%;
@@ -265,16 +247,19 @@ body{
   .header {
     grid-template-columns: 1fr; 
     padding: 10px;
+    margin-bottom: 0px;
   }
 
   .contenedor-menu {
     flex-direction: column; 
     align-items: center; 
   }
+  
 
   .menu-icono {
     margin-right: 0; 
-    margin-bottom: 10px; 
+    margin-bottom: 0px; 
+    
   }
 
   .Lista ul {
@@ -283,8 +268,8 @@ body{
 
   .Lista ul li {
     margin-right: 0; 
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 0px;
+    padding: 10px;
   }
   #titulo1{
     font-size: 35px;
@@ -304,7 +289,7 @@ body{
   }
 
   .actual, .retro, .streetwear {
-      font-size: 20px; /* Cambia el tamaño de la fuente */
+      font-size: 20px; 
     }
 
   .contenido-servicio h2{

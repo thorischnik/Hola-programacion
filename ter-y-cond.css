@@ -1,67 +1,37 @@
 body{
-    background-color: rgb(38, 57, 94);
-  }
-  
-  .header {
-    background-color:rgb(38, 57, 94); 
-    color: white;
-    padding: 10px 20px; 
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center; 
-    justify-content: center; 
-    position: -webkit-sticky; 
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
-    
-  }
-  
-  .contenedor-menu {
-    display: flex;
-    align-items: center; 
-  }
-  
-  .menu-icono {
-    width: 100px; 
-    height: auto;
-    margin-right: 10px; 
-  }
-  
-  .Lista ul {
-    font-family: "Aboreto", system-ui;
-    font-weight: 1000;
-    font-style: normal;
-    font-optical-sizing: auto;
-    list-style-type: none; 
-    padding: 10px 0; 
-    margin: 0;
-    display: flex;
-    font-size: 24px; 
-  }
-  
-  .Lista ul li {
-    margin-right: 30px; 
-  }
-  
-  .Lista ul li a:hover{
-    color: black;
-  }
-  
-  .Lista ul li:last-child {
-    margin-right: 0; 
-  }
-  
-  .Lista ul li a {
-    color:white; 
-    text-decoration: none; 
-  }
+  background-color: rgb(38, 57, 94)!important;
+}
 
-  #titulo {
-    font-family: "Aboreto", system-ui;
-    font-weight: 600;
-    font-style: normal;
-  }
+#nav_prueba{
+  background-color: rgb(38, 57, 94)!important;
+  position: sticky!important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.texto_nav{
+  color : white!important;
+  position: sticky!important;
+}
+
+#nav_prueba .navbar-nav .nav-link {
+  color: white; /* Cambia el color del texto a blanco */
+  font-size: 1.5rem;
+  font-family: "Aboreto", system-ui;
+}
+
+#nav_prueba .navbar-brand {
+  color: white; /* Cambia el color del texto a blanco */
+  font-size: 1.5rem;
+  font-family: "Aboreto", system-ui;
+}
+
+.menu-icono {
+  width: 80px; 
+  height: auto;
+  margin-right: 10px; 
+}
 
 /* HEADER */
 
@@ -81,6 +51,14 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+  #nav_prueba .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  #nav_prueba .navbar-brand {
+    font-size: 1rem;
+  }
+
   .header {
     grid-template-columns: 1fr; 
     padding: 10px; 
