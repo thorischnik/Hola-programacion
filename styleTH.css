@@ -73,6 +73,27 @@ body{
   border-radius: 10px; 
 }
 
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  /* Ajusta la altura y el ancho del contenedor del botón */
+  height: 100px; /* Ajusta la altura según lo necesites */
+  width: 200px; /* Ajusta el ancho según lo necesites */
+}
+
+.boton button {
+  background-color: yellow;
+  font-family:"Exo", sans-serif ;
+  height: 80%; /* Toma toda la altura del contenedor */
+  width: 100%; /* Toma todo el ancho del contenedor */
+  font-size: 35px; /* Ajusta el tamaño del texto */
+  border-radius: 25px; /* Define las esquinas redondeadas */
+}
+
+
 .tres-opciones {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -84,7 +105,8 @@ body{
   padding: 100px;
   text-align: center;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  border: 5px solid rgb(38, 57, 94);
+  border-radius: 25px; /* Define las esquinas redondeadas */
 }
 
 .tres-opciones a {
@@ -221,6 +243,14 @@ body{
   color:purple;
 }
 
+.productos h2{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Aboreto", system-ui;
+  font-size: 60px;
+}
+
 @media only screen and (max-width: 600px) {
   #nav_prueba .navbar-nav .nav-link {
     font-size: 1.1rem;
@@ -302,6 +332,9 @@ body{
   .contenido-servicio{
     width: 100%;
     
+  }
+  .productos h2{
+    font-size: 40px;
   }
 }
   
