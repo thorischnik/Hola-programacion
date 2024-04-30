@@ -82,6 +82,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Función para realizar la compra
+    function realizarCompra() {
+        if (carrito.length > 0) {
+            // Mostrar mensaje de confirmación
+            alert('Compra realizada correctamente. ¡Gracias por su compra!');
+            
+            // Resetear el carrito
+            carrito.length = 0;
+            
+            // Actualizar la visualización del carrito
+            actualizarCarrito();
+        } else {
+            alert('El carrito está vacío. No se puede realizar la compra.');
+        }
+    }
+
+    // Agregar evento al botón de compra
+    document.getElementById('boton-compra').addEventListener('click', realizarCompra);
+
     // Función para aumentar la cantidad de un producto en el carrito
     window.sumarCantidad = function(titulo) {
         const productoEnCarrito = carrito.find(item => item.titulo === titulo);
