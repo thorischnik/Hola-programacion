@@ -53,6 +53,15 @@ body{
 .card-8 { grid-area: card-8; }
 .card-9 { grid-area: card-9; }
 
+
+.card-body h5{
+  color: white;
+}
+
+.card-text{
+  color: aliceblue;
+}
+
 @media only screen and (max-width: 600px) {
   #nav_prueba .navbar-nav .nav-link {
     font-size: 1.1rem;
